@@ -1,0 +1,60 @@
+<!-- Interpolation -->
+<!-- <p>Welcome to {{hotelName}}</p> -->
+
+<app-header></app-header>
+<app-header></app-header>
+
+<div [hidden]="hideRooms">
+
+    <!-- Property Binding -->
+    Number of Rooms:
+    <div [innerText]="numberOfRooms"></div>
+
+</div>
+
+<!-- Event Binding -->
+<button (click)="toggle()">Toggle</button>
+
+<!-- Optional chaining -->
+<!-- {{ rooms?.totalRooms ?? 'No rooms' }} -->
+
+@if (selectedRoom) {
+    <p>Selected Room: {{selectedRoom | json}}</p>
+} @else {
+    <p>No room selected</p>
+}
+
+<h1>{{getError$ | async}}</h1>
+<h1>Number of rooms: {{roomsCount$ | async}}</h1>
+<!-- Structure Directive: *, can add/remove element of DOM -->
+<!-- Directive: try to use *ngIf instead of hidden (security) -->
+<!-- <div *ngIf="!hideRooms"> -->
+<div *ngIf="rooms$ | async as rooms">
+    <!-- will take care of the unsubscribe, no need to write on ngOnDestroy -->
+    <app-room-list [rooms]="rooms" (selectedRoom)="selectRoom($event)" [title]="title"></app-room-list>
+    <!-- <app-room-list [rooms]="roomList" (selectedRoom)="selectRoom($event)" [title]="title"></app-room-list> -->
+</div>
+
+<div [ngStyle]="{'color': rooms.availableRooms > 0 ? 'green' : 'red'}">
+    Green Text
+</div>
+
+<div>
+    <button class="btn btn-primary" (click)="addRoom()">Add Room</button>
+    <button class="btn btn-primary" (click)="editRoom()">Edit Room</button>
+    <button class="btn btn-primary" (click)="deleteRoom()">Delete Room</button>
+</div>
+
+<!-- {{roomList | json}} -->
+
+{{"hello world is good" | slice : 0:11 | uppercase}}
+
+@for (room of roomList; track room) {
+    <p>{{room.price}}</p>
+} @empty {
+    <p>No rooms</p>
+}
+
+<h1> {{totalBytes}} loaded </h1>
+<router-outlet></router-outlet>
+
