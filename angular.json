@@ -116,9 +116,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "baseHref": "/AngularTest/",
-          "outputPath": "dist/"
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
