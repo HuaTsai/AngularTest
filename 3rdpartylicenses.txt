@@ -1,23 +1,8 @@
+@angular/animations
+MIT
 
---------------------------------------------------------------------------------
-Package: @angular/forms
-License: "MIT"
-
-
---------------------------------------------------------------------------------
-Package: @angular/platform-browser
-License: "MIT"
-
-
---------------------------------------------------------------------------------
-Package: @angular/animations
-License: "MIT"
-
-
---------------------------------------------------------------------------------
-Package: @angular/cdk
-License: "MIT"
-
+@angular/cdk
+MIT
 The MIT License
 
 Copyright (c) 2023 Google LLC.
@@ -40,10 +25,21 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
---------------------------------------------------------------------------------
-Package: @angular/material
-License: "MIT"
 
+@angular/common
+MIT
+
+@angular/core
+MIT
+
+@angular/forms
+MIT
+
+@angular/localize
+MIT
+
+@angular/material
+MIT
 The MIT License
 
 Copyright (c) 2023 Google LLC.
@@ -66,10 +62,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
---------------------------------------------------------------------------------
-Package: rxjs
-License: "Apache-2.0"
 
+@angular/platform-browser
+MIT
+
+@angular/router
+MIT
+
+rxjs
+Apache-2.0
                                Apache License
                          Version 2.0, January 2004
                       http://www.apache.org/licenses/
@@ -273,10 +274,9 @@ License: "Apache-2.0"
  limitations under the License.
  
 
---------------------------------------------------------------------------------
-Package: tslib
-License: "0BSD"
 
+tslib
+0BSD
 Copyright (c) Microsoft Corporation.
 
 Permission to use, copy, modify, and/or distribute this software for any
@@ -289,25 +289,9 @@ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
 LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
---------------------------------------------------------------------------------
-Package: @angular/core
-License: "MIT"
 
-
---------------------------------------------------------------------------------
-Package: @angular/common
-License: "MIT"
-
-
---------------------------------------------------------------------------------
-Package: @angular/router
-License: "MIT"
-
-
---------------------------------------------------------------------------------
-Package: zone.js
-License: "MIT"
-
+zone.js
+MIT
 The MIT License
 
 Copyright (c) 2010-2023 Google LLC. https://angular.io/license
@@ -329,10 +313,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
---------------------------------------------------------------------------------
-Package: @angular/localize
-License: "MIT"
-
-
---------------------------------------------------------------------------------
